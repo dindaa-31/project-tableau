@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan Khas Pulau Jawa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .modal:target {
+            display: block;
+        }
+        .modal-content {
+            background: white;
+            padding: 10px;
+            width: 50%;
+            
+            position: relative;
+            border-radius: 8px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        /* CSS untuk Menampilkan Modal dengan :target */
+        #modalJawabarat:target,
+        #modalJawatengah:target,
+        #modalJawatimur:target,
+        #modalBanten:target,
+        #modalDKIJakarta:target,
+        #modalDIYogyakarta:target {
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- NAV BAR -->
+
+    <section class="header"> 
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="history.html">HISTORY</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Cinta Indonesia, Mulai Dari Rasa<br>Khas Pulau Jawa</h1>
+            <p>Membawa Anda ke Dalam Perjalanan Rasa dengan Masakan Khas Pulau Jawa</p>
+            <a href="#section1" class="hero-btm">VISIT NOW</a>
+        </div>
+    </section>
+
+    <section id="section1" class="course">
+        <h1>Provinsi yang Terletak di Pulau Jawa</h1>
+        <p></p>
+    </section>
+
+    <div class="row">
+        <div class="course-col">
+            <a id="jawabarat-i" href="#modalJawabarat">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">Jawa Barat</h3>
+                <p>Sistem Informasi adalah salah satu program studi yang unik karena menggabungkan beberapa bidang keilmuan, yaitu Ilmu Komputer, Manajemen, dan Bisnis.</p>
+            </a>
+        </div>
+
+        <div class="course-col">
+            <a id="jawatengah-i" href="#modalJawatengah">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">Jawa Tengah</h3>
+                <p>Teknik Informatika adalah bidang ilmu yang mempelajari bagaimana menggunakan teknologi komputer secara optimal guna menangani masalah transformasi atau pengolahan data dengan proses logika.</p>
+            </a>
+        </div>
+
+        <div class="course-col">
+            <a id="jawatimur-i" href="#modalJawatimur">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">Jawa Timur</h3>
+                <p>sains data adalah sebuah ilmu terapan yang menganalisis serta mempelajari data, khususnya data numeric, baik terstruktur atau tidak terstruktur.</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="course-col">
+            <a id="Banten-i" href="#modalBanten">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">Banten</h3>
+                <p>Sistem Informasi adalah salah satu program studi yang unik karena menggabungkan beberapa bidang keilmuan, yaitu Ilmu Komputer, Manajemen, dan Bisnis.</p>
+            </a>
+        </div>
+
+        <div class="course-col">
+            <a id="DKIJakarta-i" href="#modalDKIJakarta">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">DKI Jakarta</h3>
+                <p>Teknik Informatika adalah bidang ilmu yang mempelajari bagaimana menggunakan teknologi komputer secara optimal guna menangani masalah transformasi atau pengolahan data dengan proses logika.</p>
+            </a>
+        </div>
+
+        <div class="course-col">
+            <a id="DIyogyakarta-i" href="#modalDIYogyakarta">
+                <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                <h3 style="text-align: center;">DI Yogyakarta</h3>
+                <p>sains data adalah sebuah ilmu terapan yang menganalisis serta mempelajari data, khususnya data numeric, baik terstruktur atau tidak terstruktur.</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="row">
+        <a class="center-viewAll" target="_blank" href="https://instagram.com">Untuk detail lebih lanjut silakan klik disini.</a>
+
+    </div>
+
+    <!-- The Modal -->
+    <!-- Modal Jawa Barat -->
+    <div id="modalJawabarat" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="surabi.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Surabi</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="batagor.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Batagor</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Jawa Tengah -->
+    <div id="modalJawatengah" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="getuk.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Getuk</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="wajik.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Wajik</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Jawa Timur -->
+    <div id="modalJawatimur" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="brem.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Brem</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="rawon.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Rawon</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Banten -->
+    <div id="modalBanten" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="seblak.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Seblak</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="batagor.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Batagor</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal DKI Jakarta -->
+    <div id="modalDKIJakarta" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="getuk.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Getuk</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="wajik.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Wajik</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal DI Yogyakarta -->
+    <div id="modalDIYogyakarta" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <div class="row">
+                <div class="course-col-modal">
+                    <a href="brem.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Brem</h3>
+                    </a>
+                </div>
+                <div class="course-col-modal">
+                    <a href="rawon.html">
+                        <img src="pic/makananJawa.jpg" width="100" height="100" class="center">
+                        <h3 style="text-align: center;">Rawon</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 - Project Tableau - Makanan Khas Pulau Jawa. All rights reserved.</p>
+            <div class="connect">
+                <p>Connect with us:</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-x"></i> X</a>
+                    <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

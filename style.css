@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans serif";
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(pic/makananJawa.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(249, 246, 246);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: firebrick;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 100%;
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50, 50);
+}
+
+.text-box h1{
+    font-size: 35px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btm{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 25px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btm:hover {
+    border: 1px solid rgb(99, 190, 221);
+    background: rgb(106, 194, 224);
+    transition: 1s;
+}
+
+/* Course */
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: lightblue;
+    /*
+    background-image: url("pic/makananJawa.jpg");
+    filter: brightness(70%); */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* Transisi zoom */
+}
+.course-col a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: transform 0.3s ease-in-out; /* Transisi zoom */
+}
+
+.course-col:hover {
+    transform: scale(1.1); /* Zoom in saat hover */
+}
+
+.course-col img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-in-out; /* Efek transisi untuk gambar */
+}
+
+.course-col:hover img {
+    transform: scale(1.2); /* Zoom in gambar */
+}
+
+
+.course-col-modal{
+    flex-basis: 45%;
+    background: lightblue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .center-viewAll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .closeJawaBarat {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeJawaBarat:hover,
+  .closeJawaBarat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .closeJawaTengah {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeJawaTengah:hover,
+  .closeJawaTengah:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* The Close Button */
+  .closeJawaTimur {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeJawaTimur:hover,
+  .closeJawaTimur:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Add margin to push it away from the content */
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+footer .social-links a i {
+    margin-right: 5px;
+}
+
+footer .connect p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
